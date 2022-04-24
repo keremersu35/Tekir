@@ -31,13 +31,13 @@
 
     <ImageView
         android:id="@+id/starOff"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:layout_gravity="left"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
-        app:srcCompat="@android:drawable/btn_star_big_off" />
+        app:srcCompat="@drawable/fav_off" />
 
 
 </LinearLayout>

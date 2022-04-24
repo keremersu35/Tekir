@@ -8,7 +8,6 @@ import android.os.Handler;
 import android.widget.ImageView;
 
 import com.airbnb.lottie.LottieAnimationView;
-import com.example.tekirapp.MainActivity;
 import com.example.tekirapp.R;
 
 public class SplashScreen extends AppCompatActivity {
@@ -20,6 +19,8 @@ public class SplashScreen extends AppCompatActivity {
 
         LottieAnimationView lottieAnimationView;    //splash screen
         ImageView tekirPng;
+
+        getSupportActionBar().hide();
 
         lottieAnimationView = findViewById(R.id.lottie);
         tekirPng = findViewById(R.id.tekirPng);

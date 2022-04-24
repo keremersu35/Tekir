@@ -1,4 +1,4 @@
-package com.example.tekirapp;
+package com.example.tekirapp.Model;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

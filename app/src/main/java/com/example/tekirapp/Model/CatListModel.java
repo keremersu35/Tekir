@@ -1,13 +1,7 @@
-package com.example.tekirapp;
+package com.example.tekirapp.Model;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
-
-import org.json.JSONArray;
-import org.json.JSONObject;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class CatListModel {
 
@@ -19,6 +13,17 @@ public class CatListModel {
     @SerializedName("image")
     @Expose
     public Image1 image = null;
+
+    @SerializedName("life_span")
+    public String lifeSpan;
+
+    @SerializedName("origin")
+    public String origin;
+
+    @SerializedName("description")
+    public String description;
+
+
 
 }
 

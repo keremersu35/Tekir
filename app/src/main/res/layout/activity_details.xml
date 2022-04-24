@@ -4,77 +4,99 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DetailsActivity">
+    tools:context=".View.DetailsActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="222dp"
+        android:layout_height="218dp"
+        android:scrollbarTrackVertical="@drawable/ic_launcher_background"
+        app:layout_constraintBottom_toBottomOf="@+id/catImageDetail"
+        app:layout_constraintEnd_toEndOf="@+id/catImageDetail"
+        app:layout_constraintStart_toStartOf="@+id/catImageDetail"
+        app:layout_constraintTop_toTopOf="@+id/catImageDetail"
+        app:layout_constraintVertical_bias="0.534"
+        app:srcCompat="@drawable/back" />
 
     <ImageView
         android:id="@+id/catImageDetail"
         android:layout_width="196dp"
         android:layout_height="191dp"
-        app:layout_constraintBottom_toTopOf="@+id/catNameDetail"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.525"
-        android:layout_marginLeft="100dp"
-        android:layout_marginRight="100dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"
+        app:layout_constraintVertical_bias="0.17"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
         android:id="@+id/catNameDetail"
         android:layout_width="312dp"
-        android:layout_height="38dp"
-        android:layout_marginBottom="32dp"
-        android:text="TextView"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/catDescriptionDetail"
+        android:background="#0FFFFFFF"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/catImageDetail"
+        app:layout_constraintVertical_bias="0.12" />
 
     <TextView
         android:id="@+id/catDescriptionDetail"
         android:layout_width="312dp"
-        android:layout_height="38dp"
-        android:layout_marginBottom="32dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/catLifeSpanDetail"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/catNameDetail"
+        app:layout_constraintVertical_bias="0.006" />
 
     <TextView
         android:id="@+id/catLifeSpanDetail"
         android:layout_width="312dp"
-        android:layout_height="38dp"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
         android:layout_marginTop="20dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginRight="20dp"
         android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/catOriginDetail"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/catDescriptionDetail"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/catOriginDetail"
         android:layout_width="312dp"
-        android:layout_height="38dp"
-        android:layout_marginBottom="172dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
         android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="172dp"
+        android:background="#FFFFFF"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/catLifeSpanDetail"
+        app:layout_constraintVertical_bias="0.0" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
