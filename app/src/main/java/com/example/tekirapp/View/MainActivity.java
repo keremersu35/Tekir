@@ -4,7 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.SearchView;
 
 import com.example.tekirapp.Services.CatApi;
@@ -35,6 +38,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+
         recyclerView = findViewById(R.id.recyclerViewHome);
         searchView = findViewById(R.id.searchView);
         retrofitInitializer = new RetrofitInitializer();
@@ -42,6 +47,24 @@ public class MainActivity extends AppCompatActivity {
 
         loadData(temp);
         Search();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+                getMenuInflater().inflate(R.menu.menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        if (id == R.id.action_fav) {
+            Intent intent1 = new Intent(this,FavListActivity.class);
+            this.startActivity(intent1);
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     private void loadData(String query){

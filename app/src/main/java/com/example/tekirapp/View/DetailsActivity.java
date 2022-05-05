@@ -34,6 +34,7 @@ public class DetailsActivity extends AppCompatActivity {
        getData();
     }
 
+
     public void getData(){
         catNameDetail.setText("Name: "+getIntent().getStringExtra("name"));
         catDescriptionDetail.setText("Description: "+getIntent().getStringExtra("description"));

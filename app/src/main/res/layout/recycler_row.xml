@@ -4,6 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="horizontal"
+    android:background="@drawable/radius"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginBottom="2dp">
@@ -30,7 +31,7 @@
         android:textSize="20sp" />
 
     <ImageView
-        android:id="@+id/starOff"
+        android:id="@+id/favOff"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_gravity="left"

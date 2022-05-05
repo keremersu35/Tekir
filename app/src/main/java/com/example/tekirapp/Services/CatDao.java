@@ -14,14 +14,12 @@ import io.reactivex.rxjava3.core.Flowable;
 @Dao
 public interface CatDao {
 
-    @Query("SELECT * FROM Cat WHERE fav=1")
+    @Query("SELECT * FROM Cat WHERE fav = 1")
     Flowable<List<Cat>> getAll();
 
     @Insert
     Completable insert(Cat cat);
-    //void insert(Place place);
 
     @Delete
     Completable delete(Cat cat);
-    //void delete(Place place);
 }

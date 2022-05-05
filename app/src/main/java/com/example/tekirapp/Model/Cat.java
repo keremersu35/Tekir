@@ -2,6 +2,7 @@ package com.example.tekirapp.Model;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
+import androidx.room.Index;
 import androidx.room.PrimaryKey;
 
 @Entity
@@ -26,14 +27,18 @@ public class Cat {
     public String lifeSpan;
 
     @ColumnInfo(name = "fav")
-    public boolean fav;
+    public int fav;
 
-    public Cat(String name, String url, String description, String origin, String lifeSpan, boolean fav) {
+    public Cat(String name, String url, String description, String origin, String lifeSpan, int fav) {
         this.name = name;
         this.url = url;
         this.description = description;
         this.origin = origin;
         this.lifeSpan = lifeSpan;
         this.fav = fav;
+    }
+
+    public Cat(){
+
     }
 }
